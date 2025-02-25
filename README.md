@@ -653,7 +653,7 @@ python -u print_results.py --index_start $INDEX_START --index_end $INDEX_END --s
 </details>
 
 #### Start and End Delay
-The scripts for start and end delay should be very similar to that for start delay. The main differences are that (1) we set `optim_option` to `start_and_end_delay` instead of `start_delay`, and (2) we specify a few more parameters related to end delay (`l_low_end`, `l_high_end`). We provide example scripts for this setting in `./delay/scripts/j20-m10-t30/start+end_delay`.
+The scripts for start and end delay should be very similar to that for start delay. The main differences are that (1) we set `optim_option` to `start_and_end_delay` instead of `start_delay`, and (2) we specify a few more parameters related to end delay (`l_low_end`, `l_high_end`). We provide example scripts for this setting in `./delay/scripts/j25-m25-t24/start+end_delay`.
 
 
 <details>
@@ -689,7 +689,7 @@ Please see an example script at `./delay/scripts/j25-m25-t24/start+end_delay/5_p
 </details>
 
 #### Start and End Delay + Obs. Noise
-The scripts for start and end delay + obs. noise should be very similar to that for start and end delay. The main difference is that we specify the `perturb_p` parameter related to obs. noise and add the `--perturb_data` flag. We can reuse the same FJSP instances as in the start and end delay setting, and the observation noise are generated on the fly (online). We provide example scripts for this setting in `./delay/scripts/j20-m10-t30/start+end_delay+obs_noise`.
+The scripts for start and end delay + obs. noise should be very similar to that for start and end delay. The main difference is that we specify the `perturb_p` parameter related to obs. noise and add the `--perturb_data` flag. We can reuse the same FJSP instances as in the start and end delay setting, and the observation noise are generated on the fly (online). We provide example scripts for this setting in `./delay/scripts/j25-m25-t24/start+end_delay+obs_noise`.
 
 <details>
   <summary>1. Training Data Collection (Lookahead Oracle) </summary>
